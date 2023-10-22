@@ -31,7 +31,7 @@ const Home = () => {
         <meta name="author" content="Shubham Dhoot" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-gray-300 px-3 h-full">
+      <div className="bg-gray-300 px-3 min-h-screen h-full">
         <div className="flex justify-between items-center">
           <h1 className=" mx-4  text-black font-semibold text-3xl mb-2">SpaceX Launch Programs</h1>
         </div>

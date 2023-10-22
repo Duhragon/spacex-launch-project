@@ -31,7 +31,7 @@ const Home = () => {
         <meta name="author" content="Shubham Dhoot" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-gray-300 px-3">
+      <div className="bg-gray-300 px-3 h-full">
         <div className="flex justify-between items-center">
           <h1 className=" mx-4  text-black font-semibold text-3xl mb-2">SpaceX Launch Programs</h1>
         </div>
@@ -51,9 +51,9 @@ const Home = () => {
             <LaunchList launches={launchArray} loading={loading} />
           </div>
         </div>
-        <div className="pt-4 pb-6 flex justify-center">
+        <div className="pt-4 pb-6 flex  justify-center">
           <h2 className="text-black">
-            <span className="font-bold text-lg pr-2">Developed by:</span>
+            <span className="font-bold text-lg pr-2 ">Developed by:</span>
             Shubham Dhoot
           </h2>
         </div>

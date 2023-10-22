@@ -36,7 +36,7 @@ const Home = () => {
           <h1 className=" mx-4  text-black font-semibold text-3xl mb-2">SpaceX Launch Programs</h1>
         </div>
         <div className="sm:flex max-w-[1440px] mx-auto">
-          <div className="bg-white px-5 rounded max-h-full pt-1 mr-4 mb-4 h-full">
+          <div className="bg-white px-5 rounded max-h-full pt-1 mx-2 sm:mr-4 mb-4 h-full">
             <h3 className="text-black px-3 font-bold text-xl">Filters</h3>
             <Filters
               year_st={year}

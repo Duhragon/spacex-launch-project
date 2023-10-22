@@ -14,9 +14,9 @@ const Filters = ({ year_st, launch_st, landing_st, onYearFilter, onLaunchFilter,
           {launchYears.map((year, index) => (
             <button
               key={index}
-              className={`bg-[${
-                year === year_st ? "#649403" : "#A3CB38"
-              }] my-2 py-[2px] px-4 hover:bg-[#649403] rounded-md text-black`}
+              className={`${
+                year === year_st ? "bg-[#649403]" : "bg-[#A3CB38]"
+              } my-2 py-[2px] px-4 hover:bg-[#649403] rounded-md text-black`}
               onClick={() => onYearFilter(year)}
             >
               {year}
@@ -34,9 +34,9 @@ const Filters = ({ year_st, launch_st, landing_st, onYearFilter, onLaunchFilter,
           {launchStatus.map((launch, index) => (
             <button
               key={index}
-              className={`bg-[${
-                launch === launch_st ? "#649403" : "#A3CB38"
-              }] my-2 py-[2px] px-4 hover:bg-[#649403] rounded-md text-black`}
+              className={`${
+                launch === launch_st ? "bg-[#649403]" : "bg-[#A3CB38]"
+              } my-2 py-[2px] px-4 hover:bg-[#649403] rounded-md text-black`}
               onClick={() => onLaunchFilter(launch)}
             >
               {launch}
@@ -55,9 +55,9 @@ const Filters = ({ year_st, launch_st, landing_st, onYearFilter, onLaunchFilter,
           {landingStatus.map((land, index) => (
             <button
               key={index}
-              className={`bg-[${
-                land === landing_st ? "#649403" : "#A3CB38"
-              }] mt-3 mb-16 py-[2px] px-4 hover:bg-[#649403] rounded-md text-black`}
+              className={`${
+                land === landing_st ? "bg-[#649403]" : "bg-[#A3CB38]"
+              } mt-3 mb-16 py-[2px] px-4 hover:bg-[#649403] rounded-md text-black`}
               onClick={() => onLandingFilter(land)}
             >
               {land}

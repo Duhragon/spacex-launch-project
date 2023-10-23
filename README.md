@@ -56,5 +56,5 @@ Live demo https://spacex-launch-project.vercel.app/
 5. Phone view
    ![Alt text](./public/phoneview2.png)
 
-6. Phone view
+6. Performance
    ![Alt text](./public/performance.png)

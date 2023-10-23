@@ -10,14 +10,20 @@ const LaunchList = ({ launches, loading }) => {
           <div key={index} className="px-2 pb-4 flex-grow w-full ">
             <div className="bg-white p-6 h-full min-w-full border border-gray-300 rounded-md shadow">
               <div className="bg-whitesmoke">
-                <Image
-                  src={item.links.mission_patch_small}
-                  alt="Mission Patch"
-                  layout="responsive"
-                  width={200}
-                  height={200}
-                  className="bg-gray-300 mb-4"
-                />
+                {item.links.mission_patch_small ? (
+                  <Image
+                    src={item.links.mission_patch_small}
+                    alt="Mission Patch"
+                    layout="responsive"
+                    width={200}
+                    height={200}
+                    className="bg-gray-300 mb-4"
+                  />
+                ) : (
+                  <div className="mb-4 flex  bg-gray-300 justify-center">
+                    <p className="text-black ">No patch found</p>
+                  </div>
+                )}
               </div>
               <p className="text-blue-500 font-bold text-lg mb-3">
                 {item.mission_name} #{item.flight_number}

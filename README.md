@@ -1,5 +1,7 @@
 # SpaceX Launch finder task
 
+Live demo https://spacex-launch-project.vercel.app/
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -55,5 +57,5 @@
 5. Phone view
    ![Alt text](./public/phoneview2.png)
 
-6. Phone view
+6. Performance snapshot
    ![Alt text](./public/performance.png)

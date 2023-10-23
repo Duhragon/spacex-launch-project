@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const LaunchList = ({ launches, loading }) => {
@@ -9,7 +10,14 @@ const LaunchList = ({ launches, loading }) => {
           <div key={index} className="px-2 pb-4 flex-grow w-full ">
             <div className="bg-white p-6 h-full min-w-full border border-gray-300 rounded-md shadow">
               <div className="bg-whitesmoke">
-                <img className="w-full bg-gray-300 mb-4" src={item.links.mission_patch_small} alt="Mission Patch" />
+                <Image
+                  src={item.links.mission_patch_small}
+                  alt="Mission Patch"
+                  layout="responsive"
+                  width={200}
+                  height={200}
+                  className="bg-gray-300 mb-4"
+                />
               </div>
               <p className="text-blue-500 font-bold text-lg mb-3">
                 {item.mission_name} #{item.flight_number}
